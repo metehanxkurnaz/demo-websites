@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azelia Otel Ankara — Kavaklıdere'de Modern ve Konforlu Konaklama</title>
+  <meta name="description" content="Ankara Kavaklıdere'de temiz, modern ve uygun fiyatlı otel. Kahvaltı dahil odalar, ücretsiz otopark ve Wi-Fi.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Georgia' fill='%23b08d57'>A</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="logo"><span class="logo__name">Azelia</span><span class="logo__sub">Otel · Ankara</span></div></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__name">Azelia</span><span class="logo__sub">Otel · Ankara</span></a>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="rooms.html">Odalar</a></li>
+          <li><a href="experiences.html">Hizmetler</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <a href="contact.html#booking" class="btn btn--gold">Rezervasyon</a>
+      </nav>
+      <button class="burger" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?auto=format&fit=crop&w=2200&q=80" alt="Azelia Otel'de geniş pencereli modern oda">
+    </div>
+    <div class="container">
+      <div class="hero__content">
+        <span class="eyebrow">Kavaklıdere · Ankara</span>
+        <h1>Şehrin kalbinde <em>huzurlu</em> bir mola</h1>
+        <p>Tertemiz odalar, güler yüzlü hizmet ve doyurucu bir kahvaltı. İş seyahatinde de, hafta sonu kaçamağında da kendinizi evinizde hissedin.</p>
+        <div class="hero__actions">
+          <a href="rooms.html" class="btn btn--gold">Odaları İncele</a>
+          <a href="contact.html#booking" class="btn btn--light">Hemen Rezervasyon</a>
+        </div>
+      </div>
+    </div>
+    <span class="hero__scroll">Kaydır</span>
+  </section>
+
+  <!-- Booking -->
+  <div class="booking-bar">
+    <div class="container">
+      <form class="booking reveal" data-demo="Teşekkürler! Müsaitlik durumunu en kısa sürede size bildireceğiz." data-reset="false">
+        <div class="booking__field">
+          <label for="ci">Giriş Tarihi</label>
+          <input id="ci" type="date" data-offset="7" required>
+        </div>
+        <div class="booking__field">
+          <label for="co">Çıkış Tarihi</label>
+          <input id="co" type="date" data-offset="9" required>
+        </div>
+        <div class="booking__field">
+          <label for="guests">Kişi Sayısı</label>
+          <select id="guests">
+            <option>1 Yetişkin</option>
+            <option selected>2 Yetişkin</option>
+            <option>2 Yetişkin, 1 Çocuk</option>
+            <option>2 Yetişkin, 2 Çocuk</option>
+            <option>3 Yetişkin</option>
+          </select>
+        </div>
+        <div class="booking__field">
+          <label for="room">Oda Tipi</label>
+          <select id="room">
+            <option>Fark Etmez</option>
+            <option>Standart Oda</option>
+            <option>Deluxe Oda</option>
+            <option>Aile Odası</option>
+            <option>Junior Suit</option>
+          </select>
+        </div>
+        <button class="btn btn--gold" type="submit">Müsaitlik Sorgula</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <section class="section">
+    <div class="container split">
+      <div class="collage reveal">
+        <img class="collage__main" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Otel lobisinde oturma alanı">
+        <img class="collage__small" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Lobi kafede kahve">
+        <div class="collage__badge"><strong>12</strong><span>Yıllık<br>Tecrübe</span></div>
+      </div>
+      <div class="split__text reveal reveal-delay-1">
+        <span class="eyebrow">Azelia'ya Hoş Geldiniz</span>
+        <h2>Sade, temiz ve <em>özenle</em> hazırlanmış</h2>
+        <p>Kavaklıdere'nin sakin bir sokağında yer alan Azelia Otel, Tunalı Hilmi Caddesi'ne yürüme mesafesinde. Kızılay'a, metroya ve şehrin önemli noktalarına dakikalar içinde ulaşırsınız.</p>
+        <p>Her odayı her gün titizlikle temizliyor, misafirlerimizin ihtiyaçlarını önceden düşünmeye çalışıyoruz. Gösterişten uzak ama kaliteden ödün vermeyen bir konaklama sunuyoruz.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="42">0</strong><span>Oda</span></div>
+          <div class="stat"><strong data-count="24" data-suffix="/7">0</strong><span>Resepsiyon</span></div>
+          <div class="stat"><strong data-count="96" data-suffix="%">0</strong><span>Memnuniyet</span></div>
+        </div>
+        <a href="experiences.html" class="link-arrow">Hizmetlerimiz <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Konaklama</span>
+          <h2>Odalarımız</h2>
+        </div>
+        <a href="rooms.html" class="link-arrow">Tüm Odalar <span>→</span></a>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card reveal">
+          <div class="room-card__media">
+            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=900&q=80" alt="Standart Oda">
+            <span class="room-card__price"><strong>₺2.400</strong> / gece</span>
+          </div>
+          <div class="room-card__body">
+            <h3>Standart Oda</h3>
+            <p>Rahat bir çift kişilik yatak, çalışma masası ve sessiz bir ortam. İş seyahatleri için ideal.</p>
+            <div class="room-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>22 m²</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6-.3 4.6 1.3 5.5 4.4"/></svg>2 Kişi</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 18V8M22 18v-5H2"/><path d="M6 13V10h6v3"/></svg>Çift Kişilik</span>
+            </div>
+            <a href="rooms.html" class="link-arrow">Detaylar <span>→</span></a>
+          </div>
+        </article>
+        <article class="room-card reveal reveal-delay-1">
+          <div class="room-card__media">
+            <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80" alt="Deluxe Oda">
+            <span class="room-card__price"><strong>₺3.200</strong> / gece</span>
+          </div>
+          <div class="room-card__body">
+            <h3>Deluxe Oda</h3>
+            <p>Daha geniş yaşam alanı, oturma köşesi ve şehir manzaralı büyük pencereler.</p>
+            <div class="room-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>30 m²</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6-.3 4.6 1.3 5.5 4.4"/></svg>2 Kişi</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 18V8M22 18v-5H2"/><path d="M6 13V10h6v3"/></svg>King Yatak</span>
+            </div>
+            <a href="rooms.html" class="link-arrow">Detaylar <span>→</span></a>
+          </div>
+        </article>
+        <article class="room-card reveal reveal-delay-2">
+          <div class="room-card__media">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=900&q=80" alt="Aile Odası">
+            <span class="room-card__price"><strong>₺3.900</strong> / gece</span>
+          </div>
+          <div class="room-card__body">
+            <h3>Aile Odası</h3>
+            <p>Çocuklu aileler için ek yataklı, ferah ve aydınlık bir oda. Kahvaltı herkese dahil.</p>
+            <div class="room-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>38 m²</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.6-.3 4.6 1.3 5.5 4.4"/></svg>4 Kişi</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 18V8M22 18v-5H2"/><path d="M6 13V10h6v3"/></svg>Çift + 2 Tek</span>
+            </div>
+            <a href="rooms.html" class="link-arrow">Detaylar <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Olanaklar</span>
+          <h2>İhtiyacınız olan <em>her şey</em></h2>
+        </div>
+        <p class="lead">Konaklamanızı kolaylaştıran hizmetlerin çoğu ücretsiz ve oda fiyatına dahil.</p>
+      </div>
+      <div class="features reveal">
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><path d="M6 18a26 26 0 0 1 36 0M12 25a17 17 0 0 1 24 0M18 32a8 8 0 0 1 12 0"/><circle cx="24" cy="38" r="2"/></svg>
+          <h4>Ücretsiz Wi-Fi</h4>
+          <p>Tüm odalarda ve ortak alanlarda yüksek hızlı internet.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><path d="M8 20h28v10a10 10 0 0 1-10 10h-8A10 10 0 0 1 8 30z"/><path d="M36 24h3a4 4 0 0 1 0 8h-4"/><path d="M16 6c-2 3 2 5 0 8M24 6c-2 3 2 5 0 8"/></svg>
+          <h4>Açık Büfe Kahvaltı</h4>
+          <p>Yöresel lezzetlerle zengin, her sabah taze hazırlanan kahvaltı.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M19 34V14h7a6 6 0 0 1 0 12h-7"/></svg>
+          <h4>Ücretsiz Otopark</h4>
+          <p>Misafirlerimize özel, güvenlikli kapalı otopark.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 12v12l8 6"/></svg>
+          <h4>7/24 Resepsiyon</h4>
+          <p>Gece gündüz, her ihtiyacınızda yanınızdayız.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><path d="M24 44s14-12.4 14-24a14 14 0 0 0-28 0c0 11.6 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></svg>
+          <h4>Merkezi Konum</h4>
+          <p>Tunalı Hilmi'ye 3, Kızılay metrosuna 10 dakika.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="24" rx="2"/><path d="M16 42h16M24 34v8"/></svg>
+          <h4>Toplantı Salonu</h4>
+          <p>20 kişilik, projeksiyonlu ve donanımlı salon.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="22" rx="3"/><path d="M14 36v4M34 36v4M6 22h36"/><circle cx="16" cy="29" r="2"/><circle cx="32" cy="29" r="2"/></svg>
+          <h4>Havalimanı Transferi</h4>
+          <p>Esenboğa Havalimanı'ndan uygun fiyatlı transfer.</p>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48"><path d="M10 40V20l14-12 14 12v20z"/><path d="M18 26h12M18 32h12"/></svg>
+          <h4>Günlük Temizlik</h4>
+          <p>Odalarınız her gün özenle temizlenir ve havalandırılır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <span class="eyebrow">Hizmetler</span>
+        <h2>Güne <em>güzel</em> başlayın</h2>
+      </div>
+      <div class="tiles">
+        <a href="experiences.html#breakfast" class="tile reveal">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1100&q=80" alt="Kahvaltı tabağı">
+          <div>
+            <small>Her Sabah</small>
+            <h3>Açık Büfe Kahvaltı</h3>
+            <p>Peynir çeşitleri, taze simit, ev yapımı reçeller ve sıcak lezzetlerle zengin bir sofra.</p>
+          </div>
+        </a>
+        <a href="experiences.html#cafe" class="tile reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Lobi kafe">
+          <div>
+            <small>Gün Boyu</small>
+            <h3>Lobi Kafe</h3>
+            <p>Kahve, tatlı ve hafif atıştırmalıklar.</p>
+          </div>
+        </a>
+        <a href="experiences.html#meeting" class="tile reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=900&q=80" alt="Toplantı salonu">
+          <div>
+            <small>İş</small>
+            <h3>Toplantı Salonu</h3>
+            <p>Küçük ekipler için ideal.</p>
+          </div>
+        </a>
+        <a href="rooms.html" class="tile reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=900&q=80" alt="Aydınlık oda">
+          <div>
+            <small>Konfor</small>
+            <h3>Rahat Odalar</h3>
+            <p>Ortopedik yataklar, kaliteli nevresimler.</p>
+          </div>
+        </a>
+        <a href="experiences.html#location" class="tile reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Kahve">
+          <div>
+            <small>Çevre</small>
+            <h3>Tunalı'da Keşif</h3>
+            <p>Kafeler, parklar ve mağazalar adım başı.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner" style="background-image:url('https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=2000&q=80')">
+    <div class="container reveal">
+      <span class="eyebrow">Erken Rezervasyon</span>
+      <h2>30 gün önceden yapılan rezervasyonlarda %15 indirim, kahvaltı dahil</h2>
+      <a href="contact.html#booking" class="btn btn--light">Fırsatı Yakala</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="testimonials reveal">
+        <span class="eyebrow">Misafir Yorumları</span>
+        <div class="testimonial-track">
+          <div class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>"Oda tertemizdi, yatak çok rahattı. Kahvaltı beklediğimizden çok daha zengindi. Ankara'ya her gelişimizde burada kalacağız."</blockquote>
+            <cite>Ayşe &amp; Murat K.<span>İzmir</span></cite>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>"İş seyahatim için kaldım. Konumu harika, internet hızlı, personel çok ilgili. Fiyat-performans olarak kesinlikle tavsiye ederim."</blockquote>
+            <cite>Emre Yılmaz<span>İstanbul</span></cite>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote>"Çocuklarla birlikte aile odasında kaldık. Geniş, sessiz ve çok temizdi. Resepsiyondaki arkadaşlar her konuda yardımcı oldu."</blockquote>
+            <cite>Zeynep Demir<span>Konya</span></cite>
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
+      <div class="press reveal">
+        <span>Ücretsiz İptal</span>
+        <span>En İyi Fiyat Garantisi</span>
+        <span>Güvenli Ödeme</span>
+        <span>Kahvaltı Dahil</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Kampanyalar</span>
+          <h2>Size uygun <em>paketler</em></h2>
+        </div>
+        <p class="lead">Her bütçeye ve her seyahat amacına uygun avantajlı fırsatlar.</p>
+      </div>
+      <div class="offers">
+        <div class="offer reveal">
+          <span class="offer__num">01</span>
+          <h3>Hafta Sonu Kaçamağı</h3>
+          <p>Cuma–Pazar konaklamalarında geç çıkış ve lobi kafede iki kişilik kahve ikramı.</p>
+          <a href="contact.html#booking" class="link-arrow">Rezervasyon Yap <span>→</span></a>
+        </div>
+        <div class="offer reveal reveal-delay-1">
+          <span class="offer__num">02</span>
+          <h3>İş Seyahati</h3>
+          <p>Kurumsal misafirlere özel indirimli fiyat, erken kahvaltı ve ücretsiz toplantı saati.</p>
+          <a href="contact.html#booking" class="link-arrow">Rezervasyon Yap <span>→</span></a>
+        </div>
+        <div class="offer reveal reveal-delay-2">
+          <span class="offer__num">03</span>
+          <h3>Uzun Konaklama</h3>
+          <p>7 gece ve üzeri konaklamalarda %20 indirim ve haftalık ücretsiz çamaşır hizmeti.</p>
+          <a href="contact.html#booking" class="link-arrow">Rezervasyon Yap <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <div class="insta">
+    <a href="gallery.html"><img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=500&q=75" alt="İkiz yataklı oda"></a>
+    <a href="gallery.html"><img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=500&q=75" alt="Kahvaltı"></a>
+    <a href="gallery.html"><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=500&q=75" alt="Banyo"></a>
+    <a href="gallery.html"><img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=500&q=75" alt="Oda"></a>
+    <a href="gallery.html"><img src="https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?auto=format&fit=crop&w=500&q=75" alt="Kafe"></a>
+    <a href="gallery.html"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=500&q=75" alt="Lobi"></a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__name">Azelia</span><span class="logo__sub">Otel · Ankara</span></a>
+          <p>Ankara'nın kalbinde, temiz, modern ve huzurlu bir konaklama. İş ya da tatil için güvenilir adresiniz.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+            <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h5>Keşfedin</h5>
+          <ul>
+            <li><a href="rooms.html">Odalar</a></li>
+            <li><a href="experiences.html#breakfast">Kahvaltı</a></li>
+            <li><a href="experiences.html#meeting">Toplantı Salonu</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>İletişim</h5>
+          <ul>
+            <li>Bestekar Sokak No: 24<br>Kavaklıdere, 06680<br>Çankaya / Ankara</li>
+            <li><a href="tel:+903120000000">0 (312) 000 00 00</a></li>
+            <li><a href="mailto:info@azeliaotel.com">info@azeliaotel.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Bülten</h5>
+          <p>Kampanya ve indirimlerden ilk siz haberdar olun.</p>
+          <form class="footer-news" data-demo="Teşekkürler! Bülten listemize eklendiniz.">
+            <input type="email" placeholder="E-posta adresiniz" aria-label="E-posta adresi" required>
+            <button type="submit">Abone Ol</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year></span> Azelia Otel. Tüm hakları saklıdır.</span>
+        <span>KVKK · Gizlilik · Çerez Politikası</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
