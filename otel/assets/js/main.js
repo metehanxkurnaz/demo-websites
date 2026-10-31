@@ -1,21 +1,17 @@
-/* Azelia Otel — interactions */
 (function () {
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 
-  // Preloader
   window.addEventListener("load", () => {
     const pre = $(".preloader");
     if (pre) setTimeout(() => pre.classList.add("is-done"), 350);
   });
 
-  // Sticky header
   const header = $(".header");
   const onScroll = () => header && header.classList.toggle("is-scrolled", window.scrollY > 60);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // Mobile nav
   const burger = $(".burger");
   if (burger) {
     burger.addEventListener("click", () => {
@@ -31,13 +27,11 @@
     );
   }
 
-  // Active nav link
   const page = location.pathname.split("/").pop() || "index.html";
   $$(".nav__links a").forEach((a) => {
     if (a.getAttribute("href") === page) a.classList.add("is-active");
   });
 
-  // Reveal on scroll
   const io = new IntersectionObserver(
     (entries) =>
       entries.forEach((e) => {
@@ -50,7 +44,6 @@
   );
   $$(".reveal").forEach((el) => io.observe(el));
 
-  // Count-up stats
   const countIO = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
       if (!e.isIntersecting) return;
@@ -71,7 +64,6 @@
   }, { threshold: 0.6 });
   $$("[data-count]").forEach((el) => countIO.observe(el));
 
-  // Testimonials slider
   const slides = $$(".testimonial");
   const dotsWrap = $(".dots");
   if (slides.length && dotsWrap) {
@@ -92,7 +84,6 @@
     go(0); restart();
   }
 
-  // Booking date defaults
   const fmt = (d) => d.toISOString().split("T")[0];
   const today = new Date();
   $$('input[type="date"][data-offset]').forEach((inp) => {
@@ -102,7 +93,6 @@
     inp.min = fmt(today);
   });
 
-  // Toast
   const toast = document.createElement("div");
   toast.className = "toast";
   document.body.appendChild(toast);
@@ -114,7 +104,6 @@
     toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 4200);
   };
 
-  // Demo forms
   $$("form[data-demo]").forEach((form) =>
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -128,7 +117,6 @@
     })
   );
 
-  // Filters (rooms + gallery)
   $$("[data-filter-group]").forEach((group) => {
     const target = group.dataset.filterGroup;
     const items = $$(`[data-category]`, $(target));
@@ -145,7 +133,6 @@
     );
   });
 
-  // Lightbox
   const galleryItems = $$(".gallery__item");
   if (galleryItems.length) {
     const lb = document.createElement("div");
@@ -184,6 +171,5 @@
     });
   }
 
-  // Year
   $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();
